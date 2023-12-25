@@ -30,13 +30,13 @@ section {
   width: 90%;
   height: auto;
   margin: 40px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   flex-direction: column;
   padding: 20px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 section form input {
   width: 350px;
@@ -48,4 +48,14 @@ section form input {
   background: black;
   color: white;
   font-size: 1rem;
+}
+@media screen and (width <= 500px) {
+  section{
+    height: 100vh;
+    gap: 10px;
+    margin: auto;
+  }
+  section form input{
+    width: 320px;
+  }
 }
